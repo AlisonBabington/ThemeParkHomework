@@ -1,3 +1,7 @@
+package attractions;
+
+import attractions.Attraction;
+
 public class Rollercoaster extends Attraction {
 
 
