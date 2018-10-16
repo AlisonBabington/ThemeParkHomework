@@ -1,8 +1,16 @@
 package themeparks.attractions;
 
-public class Playground extends Attraction{
+import themeparks.ISecurity;
+import themeparks.Visitor;
+
+public class Playground extends Attraction implements ISecurity {
 
     public Playground(String name) {
         super(name);
+    }
+
+    @Override
+    public boolean isAllowedToVisitors(Visitor visitor) {
+        return (visitor.getAge() < 15);
     }
 }

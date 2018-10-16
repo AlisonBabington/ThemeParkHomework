@@ -1,9 +1,10 @@
 package themeparks.attractions;
+import themeparks.ISecurity;
 import themeparks.ITicketed;
 import themeparks.Visitor;
 
 
-public class Rollercoaster extends Attraction implements ITicketed {
+public class Rollercoaster extends Attraction implements ITicketed, ISecurity {
 
     public Rollercoaster(String name) {
         super(name);
@@ -16,7 +17,12 @@ public class Rollercoaster extends Attraction implements ITicketed {
 
     @Override
     public double priceFor(Visitor visitor) {
-        if (visitor.getHeight() > 200) return defaultPrice();
-        return 0.00;
+        if (visitor.getHeight() > 200) return defaultPrice() * 2;
+        return defaultPrice();
+    }
+
+    @Override
+    public boolean isAllowedToVisitors(Visitor visitor) {
+        return (visitor.getAge() > 14 && visitor.getHeight() > 145);
     }
 }
