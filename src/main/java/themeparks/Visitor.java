@@ -1,4 +1,7 @@
+package themeparks;
+
 public class Visitor {
+
 
     private int age;
     private double height;

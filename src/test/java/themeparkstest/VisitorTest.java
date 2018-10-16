@@ -1,3 +1,6 @@
+package themeparkstest;
+
+import themeparks.Visitor;
 import org.junit.Before;
 import org.junit.Test;
 

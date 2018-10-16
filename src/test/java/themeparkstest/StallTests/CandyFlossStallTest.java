@@ -1,6 +1,8 @@
+package themeparkstest.StallTests;
+
 import org.junit.Before;
 import org.junit.Test;
-import stalls.CandyFlossStall;
+import themeparks.stalls.CandyFlossStall;
 
 import static org.junit.Assert.assertEquals;
 

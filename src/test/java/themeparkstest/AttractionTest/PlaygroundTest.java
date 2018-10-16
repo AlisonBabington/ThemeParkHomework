@@ -1,4 +1,6 @@
-import attractions.Playground;
+package themeparkstest.AttractionTest;
+
+import themeparks.attractions.Playground;
 import org.junit.Before;
 import org.junit.Test;
 

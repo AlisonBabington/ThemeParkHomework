@@ -1,4 +1,4 @@
-package attractions;
+package themeparks.attractions;
 
 public abstract class Attraction {
     private String name;

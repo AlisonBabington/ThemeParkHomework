@@ -1,4 +1,6 @@
-import attractions.Dodgem;
+package themeparkstest.AttractionTest;
+
+import themeparks.attractions.Dodgem;
 import org.junit.Before;
 import org.junit.Test;
 

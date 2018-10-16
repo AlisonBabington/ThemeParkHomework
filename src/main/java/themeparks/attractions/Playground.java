@@ -1,4 +1,4 @@
-package attractions;
+package themeparks.attractions;
 
 public class Playground extends Attraction{
 
