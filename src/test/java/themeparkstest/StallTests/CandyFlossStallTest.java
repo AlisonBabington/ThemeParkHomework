@@ -12,7 +12,7 @@ public class CandyFlossStallTest {
 
     @Before
     public void before() {
-        candyFlossStall = new CandyFlossStall("Candy", "Tom", 1);
+        candyFlossStall = new CandyFlossStall("Candy", "Tom", 1, 8);
     }
 
     @Test

@@ -5,8 +5,8 @@ import themeparks.Visitor;
 
 public class IceCreamStall extends Stall implements ITicketed {
 
-    public IceCreamStall(String name, String ownersName, int parkingSpot) {
-        super(name, ownersName, parkingSpot);
+    public IceCreamStall(String name, String ownersName, int parkingSpot, int rating) {
+        super(name, ownersName, parkingSpot, rating);
     }
 
 
@@ -18,5 +18,10 @@ public class IceCreamStall extends Stall implements ITicketed {
     @Override
     public double priceFor(Visitor visitor) {
         return defaultPrice();
+    }
+
+    @Override
+    public boolean isAllowedToVisitors(Visitor visitor) {
+        return true;
     }
 }

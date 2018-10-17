@@ -5,8 +5,8 @@ import themeparks.Visitor;
 
 public class Dodgem extends Attraction implements ITicketed {
 
-    public Dodgem(String name) {
-        super(name);
+    public Dodgem(String name, int rating) {
+        super(name, rating);
     }
 
     @Override
@@ -18,5 +18,10 @@ public class Dodgem extends Attraction implements ITicketed {
     public double priceFor(Visitor visitor) {
         if (visitor.getAge() < 12) return defaultPrice() / 2;
         return defaultPrice();
+    }
+
+    @Override
+    public boolean isAllowedToVisitors(Visitor visitor) {
+        return true;
     }
 }

@@ -1,19 +1,28 @@
 package themeparks.stalls;
 
-public abstract class Stall {
+import themeparks.IReviewed;
+import themeparks.ISecurity;
+
+public abstract class Stall implements IReviewed, ISecurity {
 
     private String name;
     private String ownersName;
     private int parkingSpot;
+    private int rating;
 
-    public Stall (String name, String ownersName, int parkingSpot) {
+    public Stall (String name, String ownersName, int parkingSpot, int rating) {
         this.name = name;
         this.ownersName = ownersName;
         this.parkingSpot = parkingSpot;
+        this.rating = rating;
     }
 
     public String getName() {
         return name;
+    }
+
+    public int getRating() {
+        return rating;
     }
 
     public void setName(String name) {

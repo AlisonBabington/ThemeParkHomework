@@ -1,17 +1,20 @@
 package themeparks.attractions;
 
-public abstract class Attraction {
-    private String name;
+import themeparks.IReviewed;
+import themeparks.ISecurity;
 
-    public Attraction(String name) {
+public abstract class Attraction implements IReviewed, ISecurity {
+    private String name;
+    private int rating;
+
+    public Attraction(String name, int rating) {
         this.name = name;
+        this.rating = rating;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    public int getRating() {return rating;}
 }

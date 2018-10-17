@@ -6,8 +6,8 @@ import themeparks.Visitor;
 
 public class TobaccoStall extends Stall implements ITicketed, ISecurity {
 
-    public TobaccoStall(String name, String ownersName, int parkingSpot) {
-        super(name, ownersName, parkingSpot);
+    public TobaccoStall(String name, String ownersName, int parkingSpot, int rating) {
+        super(name, ownersName, parkingSpot, rating);
     }
 
     @Override

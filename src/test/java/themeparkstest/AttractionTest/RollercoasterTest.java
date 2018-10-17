@@ -16,7 +16,7 @@ public class RollercoasterTest {
 
     @Before
     public void before() {
-        rollercoaster = new Rollercoaster("Leviathan");
+        rollercoaster = new Rollercoaster("Leviathan", 9);
         visitor = new Visitor(17, 210, 200.00);
         visitor2 = new Visitor(10, 120, 200.00);
         visitor3 = new Visitor(13, 140, 10.00);

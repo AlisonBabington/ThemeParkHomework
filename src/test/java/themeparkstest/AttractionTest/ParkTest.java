@@ -12,7 +12,7 @@ public class ParkTest {
 
     @Before
     public void before() {
-        park = new Park("ParkInsideAPark");
+        park = new Park("ParkInsideAPark", 8);
     }
 
     @Test
